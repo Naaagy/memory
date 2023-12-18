@@ -1,4 +1,6 @@
 const cards = document.querySelectorAll(".card");
+refreshBtn = document.querySelector(".details button");
+
 
 let matched = 0;
 let cardOne, cardTwo;
@@ -53,7 +55,7 @@ function shuffleCard() {
     cards.forEach((card, i) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
-        imgTag.src = `images/img-${arr[i]}.png`;
+        imgTag.src = `images/kep-${arr[i]}.png`;
         card.addEventListener("click", flipCard);
     });
 }
